@@ -1,7 +1,7 @@
 # Install mininet in wsl
 
 ## Table of contents
-***
+
 * [Overview](#overview)
 * [Environment Check](#env)
 * [Build Kernel](#kernel)
@@ -11,7 +11,7 @@
 <a name="overview"></a>
 
 ## Overview
-***
+
 To make mininet run normally in wsl, you need to 
 * build an openvswitch enabled kernel
 * install mininet and its components.
@@ -20,7 +20,7 @@ To make mininet run normally in wsl, you need to
 <a name="env"></a>
 
 ## Environment Check
-***
+
 If any of the **bolded** parts is inconsistent, I strongly recommend against using this tutorial.
 
 In cmd, run
@@ -71,7 +71,7 @@ You should get
 <a name="kernel"></a>
 
 ## Build Kernel
-***
+
 ### 1. Install essential tools to build the kernel. In wsl, run
 ```bash
 sudo apt update
