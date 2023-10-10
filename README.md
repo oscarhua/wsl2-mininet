@@ -72,14 +72,14 @@ You should get
 
 ## Build Kernel
 
-##### 1. Install essential tools to build the kernel. In wsl, run
+#### 1. Install essential tools to build the kernel. In wsl, run
 ```bash
 sudo apt update
 sudo apt upgrade
 sudo apt install make autoconf build-essential flex bison bc dwarves libncurses-dev libssl-dev libelf-dev libtool
 ```
 
-##### 2. Download the source of kernel. Go to the [releases](https://github.com/microsoft/WSL2-Linux-Kernel/releases) of the Linux kernel used in WSL2. Download the release that matches your kernel version, which is in the output of `wsl -v`.
+#### 2. Download the source of kernel. Go to the [releases](https://github.com/microsoft/WSL2-Linux-Kernel/releases) of the Linux kernel used in WSL2. Download the release that matches your kernel version, which is in the output of `wsl -v`.
 ```bash
 # Choose any working directory
 cd ~
@@ -91,7 +91,7 @@ tar -xf linux-msft-<your kernel version>.tar.gz
 cd WSL2-Linux-Kernel-linux-msft-wsl-<your kernel version>
 ```
 
-##### 3. Configure kernel
+#### 3. Configure kernel
 ```bash
 # Copy the current kernel configuration
 zcat /proc/config.gz > .config
@@ -127,7 +127,7 @@ make menuconfig
         - -> Networking options
             - -> QoS and/or fair queueing (NET_SCHED [=y])
 
-##### 4. Build kernel
+#### 4. Build kernel
 Check the number of available CPU cores/threads
 ```bash
 nproc
@@ -151,7 +151,7 @@ rm -rf WSL2-Linux-Kernel-linux-msft-wsl-<your kernel version>
 ```
 After you complete this tutorial, you can also delete the tarball.
 
-##### 5. Configure wsl to use the new kernel
+#### 5. Configure wsl to use the new kernel
 Now you need to switch back to Windows. First shutdown the wsl
 ```bash
 # Run this in cmd
