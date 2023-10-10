@@ -170,7 +170,7 @@ Open your wsl. Run
 ```bash
 # Install mininet and its components
 sudo apt install mininet openvswitch-switch openvswitch-testcontroller
-# Disable run at startup of controller to fix an issue with python
+# Disable automatic startup of the controller to resolve an issue
 systemctl disable openvswitch-testcontroller
 ```
 
