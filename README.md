@@ -174,6 +174,16 @@ sudo apt install mininet openvswitch-switch openvswitch-testcontroller
 systemctl disable openvswitch-testcontroller
 ```
 
+## Install X-related tools
+
+Open your wsl. Run
+```bash
+# Install xhost and xterm for use in mininet
+sudo apt install x11-xserver-utils xterm
+```
+
+> Maybe some tutorials tell you to install `VcXSrv`, but WSL supports GUI now. My WSL version is `2.0.9.0`, and Windows version is `10.0.22631.3155`
+
 ## Finished
 Remember to delete the tarball of kernel source.
 
